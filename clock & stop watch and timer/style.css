@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef1f6;
+    font-family: 'Nanum Myeongjo';
+}
+
+.countainer {
+    width: 100%;
+    max-width: 850px;
+    padding: 60px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #6994c5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffffa0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.wrapper {
+    padding: 30px 0px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s;
+}
+
+.wrapper:hover {
+    box-shadow: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main div {
+    width: 20%;
+    text-align: center;
+}
+
+.number {
+    position: relative;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.colon {
+    font-size: 25px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Nanum Myeongjo';
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.date p {
+    font-size: 20px;
+    color: #eef1f6;
+}
+
+.info {
+    text-align: center;
+}
+
+.info span {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.number-1 {
+    position: relative;
+    width: 90px;
+    height: 65px;
+    border-radius: 10px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width:645px) {
+    .wrapper {
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width:493px) {
+    .content h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+    .countainer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0;
+        padding: 0 20px;
+    }
+
+    .content h3 {
+        font-size: 26px;
+    }
+
+    .outer-wrapper {
+        padding: 20px 0;
+    }
+
+    .main div {
+        width: 20%;
+    }
+
+    .number {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .colon {
+        margin-top: -12px;
+    }
+
+    .text-2 {
+        font-size: 13px;
+        margin-top: px;
+    }
+
+    .number-1 {
+        width: 80px;
+        font-size: 50px;
+    }
+}
+
+@media (max-width:445px) {
+    .number {
+        font-size: 48px;
+    }
+
+    .text-2 {
+        font-size: 12px;
+    }
+
+    .main {
+        gap: 13px;
+    }
+
+    .wrapper {
+        padding: 30px 30px;
+    }
+
+    .date p {
+        font-size: 18px;
+    }
+
+    .number-1 {
+        width: 70px;
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width:402px) {
+    .number-1 {
+        width: 60px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:387px) {
+    .number {
+        font-size: 45px;
+    }
+
+    .text-2 {
+        font-size: 11px;
+    }
+
+    .wrapper {
+        padding: 30px 30px;
+    }
+
+    .ampm p:nth-child(1) {
+        font-size: 30px;
+    }
+
+    .number-1 {
+        width: 50px;
+        font-size: 35px;
+    }
+
+    .main {
+        gap: 10px;
+    }
+}
